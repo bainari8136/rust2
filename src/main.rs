@@ -14,6 +14,7 @@ fn main() {
 
     variables();
     user_input();
+    arrays();
     
 }
 fn variables(){
@@ -53,4 +54,14 @@ fn  add(x:u32,y:u32)->u32 {
 
 
 	x+y
+}
+
+fn arrays(){
+
+	let numbers=[10,20,30,40,50,60,70,80,90];
+
+	for index in numbers {
+
+		println!("value:{index}");
+	}
 }
