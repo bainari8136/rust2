@@ -15,6 +15,7 @@ fn main() {
     variables();
     user_input();
     arrays();
+    references();
     
 }
 fn variables(){
@@ -64,4 +65,19 @@ fn arrays(){
 
 		println!("value:{index}");
 	}
+}
+
+fn references(){
+
+let s1=String::from("string reference");
+
+let len=calculate_length(&s1);
+
+println!("string length is {len}");
+	
+}
+fn calculate_length(str:&String)->usize {
+
+   str.len()
+	
 }
