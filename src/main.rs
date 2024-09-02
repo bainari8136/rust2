@@ -1,12 +1,19 @@
 use std::io;
 
-struct User {
-  
-  name:String,
-  age:u32,
-  
+
+struct Rectangle {
+  width:u32,
+  length:u32,
 }
 
+impl Rectangle {
+
+ fn area(&self)->u32{
+
+  self.width*self.length
+ 	
+ }
+}
 fn main() {
     println!("Hello, world!");
 
@@ -16,7 +23,7 @@ fn main() {
     user_input();
     arrays();
     references();
-    
+    using_structs();
 }
 fn variables(){
 
@@ -80,4 +87,16 @@ fn calculate_length(str:&String)->usize {
 
    str.len()
 	
+}
+
+fn using_structs(){
+
+let rect1=Rectangle{
+   width:12,
+   length:24
+};
+
+ let area:u32=rect1.area();
+
+ println!("the area is {area}");
 }
