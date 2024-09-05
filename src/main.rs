@@ -1,5 +1,7 @@
-use std::io;
+extern crate rust_lib;
 
+use std::io;
+use rust_lib::submod;
 
 struct Rectangle {
   width:u32,
@@ -24,6 +26,7 @@ fn main() {
     arrays();
     references();
     using_structs();
+    submod::print_message();
 }
 fn variables(){
 
