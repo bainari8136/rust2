@@ -8,6 +8,14 @@ struct Rectangle {
   length:u32,
 }
 
+mod demo {
+
+ pub	fn print_another_message(){
+
+		println!("message from inline module");
+	}
+}
+
 impl Rectangle {
 
  fn area(&self)->u32{
@@ -27,6 +35,7 @@ fn main() {
     references();
     using_structs();
     submod::print_message();
+    demo::print_another_message();
 }
 fn variables(){
 
