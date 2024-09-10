@@ -1,6 +1,7 @@
 extern crate rust_lib;
 
 use std::io;
+use std::collections::HashMap;
 use rust_lib::submod;
 
 struct Rectangle {
@@ -37,6 +38,7 @@ fn main() {
     submod::print_message();
     demo::print_another_message();
     using_vectors();
+    using_hashmaps();
 }
 fn variables(){
 
@@ -128,4 +130,19 @@ fn using_vectors(){
    	println!("{i}");
    }
 	
+}
+
+fn using_hashmaps(){
+
+	let mut scores=HashMap::new();
+
+	scores.insert(String::from("red"),10);
+	scores.insert(String::from("blue"),20);
+	scores.insert(String::from("Green"),30);
+
+
+	for(key,value) in &scores {
+
+		println!("{key}:{value}");
+	}
 }
