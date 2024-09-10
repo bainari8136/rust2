@@ -36,6 +36,7 @@ fn main() {
     using_structs();
     submod::print_message();
     demo::print_another_message();
+    using_vectors();
 }
 fn variables(){
 
@@ -111,4 +112,20 @@ let rect1=Rectangle{
  let area:u32=rect1.area();
 
  println!("the area is {area}");
+}
+
+fn using_vectors(){
+
+
+   let mut v:Vec<i32> =Vec::new();
+
+   v.push(45);
+   v.push(12);
+   v.push(67);
+
+   for i in &v {
+
+   	println!("{i}");
+   }
+	
 }
