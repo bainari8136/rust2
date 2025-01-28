@@ -2,7 +2,7 @@ extern crate rust_lib;
 
 use std::io;
 use std::collections::HashMap;
-use rust_lib::submod;
+
 
 struct Rectangle {
   width:u32,
@@ -35,7 +35,7 @@ fn main() {
     arrays();
     references();
     using_structs();
-    submod::print_message();
+    //submod::print_message();
     demo::print_another_message();
     using_vectors();
     using_hashmaps();
