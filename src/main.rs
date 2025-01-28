@@ -1,4 +1,4 @@
-extern crate rust_lib;
+//extern crate rust_lib;
 
 use std::io;
 use std::collections::HashMap;
